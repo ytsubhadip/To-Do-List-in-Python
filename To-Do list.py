@@ -1,4 +1,3 @@
-# import  os
 
 def add_task(task_list):
     task = str(input("Enter your task: ")).lower()
