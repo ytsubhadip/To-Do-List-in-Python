@@ -20,6 +20,8 @@ def display_task(task_list):
 
 
 def remark_task(task_list, c_task):
+    # clear the complete task list
+    c_task.clear()
     # load file
     try:
         with open("complete_task_file.txt", "r") as f:
@@ -42,7 +44,6 @@ def remark_task(task_list, c_task):
         n = 1
         print("\nYour complete task: ")
         for task in c_task:
-            c_task.clear()
             print(f"{n}-{task}")
             n = n + 1
 
@@ -62,42 +63,7 @@ def remark_task(task_list, c_task):
     except Exception as E:
         print(f"some error occurs : {E}")
 
-    # # load file
-    # try:
-    #     with open("complete_task_file.txt", "r") as f:
-    #         for line in f:
-    #             c_task.append(line.strip())
-    #
-    # except FileNotFoundError:
-    #     pass
-    # a=1
-    # print("Your total task: ")
-    # for task in task_list:
-    #     print(f"{a}-{task}")
-    #     a=a+1
-    #
-    # if not c_task :
-    #     print("You don't have complete any task\n")
-    #
-    # else:
-    #     a=1
-    #     print("\nYour  complete task: ")
-    #     for task in c_task:
-    #         print(f"{a}-{task}")
-    #         a=a+1
-    # try:
-    #     index = int(input("Enter your complete task index from your total task: "))
-    #     c_task.append(task_list[index-1])
-    #     a = 1
-    #     if task_list[index-1] in c_task:
-    #         with open("complete_task_file.txt", "w") as file:
-    #             for task in c_task:
-    #                 file.write(f"{task}\n")
-    #     elif task_list[index-1] not in c_task:
-    #         print("Task already complete\n")
-    # except Exception as E:
-    #     print(f"some error occurs : {E}")
-
+    
 
 
 def delete_task(task_list):
