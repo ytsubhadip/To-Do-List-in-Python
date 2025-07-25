@@ -20,6 +20,8 @@ def display_task(task_list):
 
 
 def remark_task(task_list, c_task):
+    # clear the complete task list
+    c_task.clear()
     # load file
     try:
         with open("complete_task_file.txt", "r") as f:
@@ -42,7 +44,6 @@ def remark_task(task_list, c_task):
         n = 1
         print("\nYour complete task: ")
         for task in c_task:
-            c_task.clear()
             print(f"{n}-{task}")
             n = n + 1
 
