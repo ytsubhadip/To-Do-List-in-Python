@@ -115,8 +115,6 @@ if __name__ == "__main__":
         print("==================================")
         user_choice= int(input("Enter your choice: "))
 
-    #condition
-
         if user_choice == 7:
             print("Thanks For Use \nDeveloped By YT SUBHADIP")
             break
