@@ -1,0 +1,4 @@
+learn r programming
+learn c programming
+learn english
+make todo list in python
